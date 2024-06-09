@@ -7,9 +7,8 @@ README_TEXT = (Path(__file__).parent / "README.md").read_text(encoding="utf-8")
 MAINTAINER = "Konstantin Verner"
 MAINTAINER_EMAIL = "konst.verner@gmail.com"
 REQUIRED_PKGS = [
-    "Base==1.0.4",
-    "numpy==1.19.5",
-    "torch==1.7.1+cu110",
+    "numpy==1.20.3",
+    "torch==1.7.1",
     "tqdm==4.59.0",
     "transformers==4.6.1"
 ]
@@ -29,8 +28,6 @@ setup(
     license="MIT",
     package_dir={"": "src"},
     packages=find_packages("src"),
-    include_package_data=True,
-    package_data={"": ["*.json"]},
     install_requires=REQUIRED_PKGS,
     classifiers=[
         "Development Status :: 1 - Planning",

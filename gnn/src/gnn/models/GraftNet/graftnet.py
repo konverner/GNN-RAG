@@ -4,13 +4,13 @@ from torch.autograd import Variable
 import torch.nn.functional as F
 import torch.nn as nn
 
-from models.base_model import BaseModel
-from modules.kg_reasoning.graft_gnn import GraftLayer
-from modules.question_encoding.lstm_encoder import LSTMInstruction#, BERTInstruction
-from modules.question_encoding.bert_encoder import BERTInstruction#, BERTInstruction
+from gnn.models.base_model import BaseModel
+from gnn.modules.kg_reasoning.graft_gnn import GraftLayer
+from gnn.modules.question_encoding.lstm_encoder import LSTMInstruction#, BERTInstruction
+from gnn.modules.question_encoding.bert_encoder import BERTInstruction#, BERTInstruction
 
-from modules.layer_init import TypeLayer
-from modules.query_update import AttnEncoder
+from gnn.modules.layer_init import TypeLayer
+from gnn.modules.query_update import AttnEncoder
 
 
 

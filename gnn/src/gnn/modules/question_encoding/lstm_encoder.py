@@ -1,8 +1,8 @@
 
 
 import torch.nn as nn
-from utils import get_dict
-from .base_encoder import BaseInstruction
+from gnn.utils import get_dict
+from gnn.modules.question_encoding.base_encoder import BaseInstruction
 
 VERY_SMALL_NUMBER = 1e-10
 VERY_NEG_NUMBER = -100000000000
