@@ -7,10 +7,10 @@ README_TEXT = (Path(__file__).parent / "README.md").read_text(encoding="utf-8")
 MAINTAINER = "Konstantin Verner"
 MAINTAINER_EMAIL = "konst.verner@gmail.com"
 REQUIRED_PKGS = [
-    "numpy==1.20.3",
-    "torch==1.7.1",
-    "tqdm==4.59.0",
-    "transformers==4.6.1"
+    "numpy==1.25.2",
+    "torch==2.3.0+cu121",
+    "tqdm==4.66.4",
+    "transformers==4.41.2"
 ]
 
 print(find_packages("src"))
